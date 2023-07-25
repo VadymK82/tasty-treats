@@ -5,16 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/tasty-treats/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testy treats</title>
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <script type="module" crossorigin src="/tasty-treats/assets/toggles-1f7c9986.js"></script>
-    <link rel="stylesheet" href="/tasty-treats/assets/favorites-901222b2.css">
+    <script type="module" crossorigin src="/tasty-treats/assets/order-now-41274e53.js"></script>
+    <link rel="stylesheet" href="/tasty-treats/assets/favorites-c19081fb.css">
   </head>
+
   <body>
     <header class="header">
   <div class="container header-container">
     <ul class="navigation">
       <li class="nav-item">
-        <a class="nav-link active-link home-link" href="./index.html">Home</a>
+        <a class="nav-link home-link" href="./index.html">Home</a>
       </li>
 
       <li class="nav-item">
@@ -60,6 +60,8 @@
 
     <section></section>
 
+    <!-- ####### modals ####### -->
+
     <!-- ####### styles in header.css ####### -->
 
 <div class="mobile-menu">
@@ -83,6 +85,65 @@
     <input class="switch" type="checkbox" />
     <span class="slider"></span>
   </label>
+</div>
+
+
+    <div class="order-backdrop">
+  <div class="order-modal">
+    <button class="order-close" type="button">
+      <svg class="close-modal-icon" width="20" height="20">
+        <use href="/tasty-treats/assets/sprite-96c1c630.svg#x-black"></use>
+      </svg>
+    </button>
+
+    <b class="order-title">Order now</b>
+
+    <form class="order-form" method="POST">
+      <label class="order-label">
+        <span class="order-span">Name</span>
+        <input
+          class="order-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+      </label>
+
+      <label class="order-label">
+        <span class="order-span">Phone number</span>
+        <input
+          class="order-input"
+          type="tel"
+          name="tel"
+          placeholder="+380000000000"
+          required
+        />
+      </label>
+
+      <label class="order-label">
+        <span class="order-span">Email</span>
+        <input
+          class="order-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </label>
+
+      <label class="order-label">
+        <span class="order-span">Comment</span>
+        <textarea
+          class="order-textarea"
+          name="comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+
+      <button class="order-send" type="submit">Send</button>
+    </form>
+  </div>
 </div>
 
 
