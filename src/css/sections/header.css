@@ -27,13 +27,13 @@
   display: none;
 }
 
-.start {
+/* .start {
   position: relative;
   width: 100vw;
   height: 100vh;
   z-index: 9998;
   background: var(--light-color);
-}
+} */
 
 /* .start-img {
   position: absolute;
@@ -65,6 +65,11 @@
   z-index: 1;
   transition: all 250ms linear;
 } */
+
+.logo:hover {
+  transform: rotateY(360deg);
+  transition: 350ms linear;
+}
 
 .logo-tasty {
   font-weight: 600;
@@ -298,8 +303,8 @@ input:checked + .slider:before {
     color: var(--white-color);
   }
 
-  .active-link,
-  .dark-theme .active-link {
+  .nav-link.active,
+  .dark-theme .nav-link.active {
     color: var(--primary-color);
   }
 

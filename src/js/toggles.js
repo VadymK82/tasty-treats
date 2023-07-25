@@ -12,18 +12,15 @@
 
 // ####### toggle active page #######
 
-// const linkEls = document.querySelectorAll('.nav-link');
+window.addEventListener('DOMContentLoaded', function () {
+  const linkEls = document.querySelectorAll('.nav-link');
 
-// linkEls.forEach(function (linkEl) {
-//   linkEl.addEventListener('click', function () {
-//       linkEls.classList.add('dark-theme');
-//       localStorage.setItem('theme', 'dark');
-//     } else {
-//       body.classList.remove('dark-theme');
-//       localStorage.setItem('theme', 'light');
-//     }
-//   });
-// });
+  linkEls.forEach(function (linkEl) {
+    if (linkEl.href.includes(location.pathname)) {
+      linkEl.classList.toggle('active');
+    }
+  });
+});
 
 // ####### toggle theme #######
 
