@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorites</title>
-    <script type="module" crossorigin src="/tasty-treats/assets/modulepreload-polyfill-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/tasty-treats/assets/favorites-b1ea60b3.css">
+    <script type="module" crossorigin src="/tasty-treats/assets/toggles-1f7c9986.js"></script>
+    <link rel="stylesheet" href="/tasty-treats/assets/favorites-901222b2.css">
   </head>
+
   <body>
     <header class="header">
   <div class="container header-container">
@@ -38,13 +39,13 @@
     <div class="buttons">
       <button class="basket order-open">
         <svg class="basket-icon" width="24" height="24">
-          <use class="icon" href="./images/sprite.svg#basket"></use>
+          <use class="icon" href="/tasty-treats/assets/sprite-96c1c630.svg#basket"></use>
         </svg>
       </button>
 
       <button class="open-menu" type="button">
         <svg class="menu-open-icon" width="32" height="32">
-          <use href="./images/sprite.svg#burger"></use>
+          <use href="/tasty-treats/assets/sprite-96c1c630.svg#burger"></use>
         </svg>
       </button>
 
@@ -58,6 +59,32 @@
 
 
     <section></section>
+
+    <!-- ####### styles in header.css ####### -->
+
+<div class="mobile-menu">
+  <button class="close-menu" type="button">
+    <svg class="menu-close-icon" width="32" height="32">
+      <use href="/tasty-treats/assets/sprite-96c1c630.svg#x"></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-navigation">
+    <li class="nav-item">
+      <a class="nav-link" href="./index.html">Home</a>
+    </li>
+
+    <li class="nav-item favorites-item">
+      <a class="nav-link" href="./favorites.html">Favorites</a>
+    </li>
+  </ul>
+
+  <label class="toggle-theme-mobile">
+    <input class="switch" type="checkbox" />
+    <span class="slider"></span>
+  </label>
+</div>
+
 
     
   </body>
