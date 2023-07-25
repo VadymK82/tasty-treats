@@ -18,13 +18,13 @@ formEl.addEventListener('submit', event => {
   let name = document.getElementById('name').value;
   let phone = document.getElementById('phone').value;
   let email = document.getElementById('email').value;
-  let comments = document.getElementById('comments').value;
+  let comment = document.getElementById('comment').value;
 
   const dataForm = {
     name: `${name}`,
     phone: `${phone}`,
     email: `${email}`,
-    comment: `${comments}`,
+    comment: `${comment}`,
   };
 
   // const { elements } = event.currentTarget;
