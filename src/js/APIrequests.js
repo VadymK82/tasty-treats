@@ -73,7 +73,6 @@ export async function orderNow(dataForm) {
     console.log(dataForm);
     Notiflix.Report.success('Your order has been successfully received');
   } catch (error) {
-    // Notiflix.Report.success('Your order has been successfully received');
     Notiflix.Report.failure(`An error has occurred ${error.response.status}`);
   }
 }

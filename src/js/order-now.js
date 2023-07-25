@@ -15,16 +15,28 @@ openEls.forEach(openEl => {
 formEl.addEventListener('submit', event => {
   event.preventDefault();
 
-  const { elements } = event.currentTarget;
+  let name = document.getElementById('name').value;
+  let phone = document.getElementById('phone').value;
+  let email = document.getElementById('email').value;
+  let comments = document.getElementById('comments').value;
 
-  let dataForm;
-
-  dataForm = {
-    [`"name"`]: elements.name.value.trim(),
-    [`"phone"`]: elements.tel.value.trim(),
-    [`"email"`]: elements.email.value.trim(),
-    [`"comment"`]: elements.comment.value.trim(),
+  const dataForm = {
+    name: `${name}`,
+    phone: `${phone}`,
+    email: `${email}`,
+    comment: `${comments}`,
   };
+
+  // const { elements } = event.currentTarget;
+
+  // let dataForm;
+
+  // dataForm = {
+  //   [`"name"`]: elements.name.value.trim(),
+  //   [`"phone"`]: elements.tel.value.trim(),
+  //   [`"email"`]: elements.email.value.trim(),
+  //   [`"comment"`]: elements.comment.value.trim(),
+  // };
 
   console.log(dataForm);
 
